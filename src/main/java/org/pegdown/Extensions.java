@@ -106,11 +106,6 @@ public interface Extensions {
     static final int ANCHORLINKS = 0x400;
 
     /**
-     * Enables TOC
-     */
-    static final int TOC = 0x800;
-
-    /**
      * All available extensions excluding the SUPPRESS_... options, ATXHEADERSPACE. FORCELISTITEMPARA
      */
     static final int ALL = 0x0000FFFF;
@@ -157,6 +152,11 @@ public interface Extensions {
      * Anchor link is added as first element inside the header with empty content: `<h1><a name="header-a"></a>header a</h1>`
      */
     static final int EXTANCHORLINKS = 0x00400000;
+
+    /**
+     * Enables TOC
+     */
+    static final int TOC = 0x00800000;
 
     /**
      * All Optionals other than Suppress and FORCELISTITEMPARA which is a backwards compatibility extension
